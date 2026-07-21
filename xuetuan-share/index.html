@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>雪团桌面宠物</title>
+<style>
+  :root { color-scheme: light; font-family: -apple-system,BlinkMacSystemFont,"SF Pro Display","PingFang SC",sans-serif; }
+  body { margin:0; min-height:100vh; display:grid; place-items:center; background:linear-gradient(135deg,#fffaf8,#edf7ff); color:#28313b; }
+  main { width:min(680px,92vw); padding:32px 24px 26px; text-align:center; background:#ffffffd9; border:1px solid #fff; border-radius:28px; box-shadow:0 18px 60px #7890a522; backdrop-filter:blur(14px); }
+  h1 { margin:0 0 5px; font-size:28px; } p { margin:0 0 24px; color:#71808d; }
+  .stage { height:270px; display:grid; place-items:center; border-radius:22px; background:repeating-conic-gradient(#f1f3f5 0 25%,#fff 0 50%) 50%/28px 28px; overflow:hidden; }
+  #pet { width:192px; height:208px; background-image:url("xuetuan-spritesheet.png"); background-repeat:no-repeat; image-rendering:auto; }
+  .controls { display:flex; flex-wrap:wrap; justify-content:center; gap:8px; margin-top:22px; }
+  button { border:0; border-radius:999px; padding:9px 14px; background:#edf1f5; color:#43505d; cursor:pointer; font-size:14px; }
+  button.active,button:hover { background:#526b82; color:#fff; }
+  .hint { margin-top:18px; font-size:12px; color:#9aa5ae; }
+</style>
+<main>
+  <h1>雪团</h1><p>一只会表达工作状态的蓝眼灰白长毛猫</p>
+  <div class="stage"><div id="pet" aria-label="雪团动画"></div></div>
+  <div class="controls" id="controls"></div>
+  <div class="hint">把这个文件夹一起发送给朋友，双击 index.html 即可打开</div>
+</main>
+<script>
+const rows=[
+  ['休息',0,6,280],['向右跑',1,8,120],['向左跑',2,8,120],['挥手',3,4,180],
+  ['跳跃',4,5,160],['失败',5,8,140],['等待',6,6,170],['工作中',7,6,140],['检查',8,6,170],
+  ['看向上半圈',9,8,150],['看向下半圈',10,8,150]
+];
+const pet=document.querySelector('#pet'), controls=document.querySelector('#controls');
+let timer, active=0, frame=0;
+function play(i){ active=i; frame=0; clearInterval(timer); const [name,row,count,ms]=rows[i]; document.querySelectorAll('button').forEach((b,n)=>b.classList.toggle('active',n===i));
+  function tick(){ pet.style.backgroundPosition=`-${frame*192}px -${row*208}px`; frame=(frame+1)%count; }
+  tick(); timer=setInterval(tick,ms);
+}
+rows.forEach((r,i)=>{const b=document.createElement('button');b.textContent=r[0];b.onclick=()=>play(i);controls.appendChild(b)});
+play(0);
+</script>
+</html>

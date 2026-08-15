@@ -1,0 +1,280 @@
+{
+  "pet_id": "xuetuan",
+  "display_name": "\u96ea\u56e2",
+  "description": "\u4e00\u53ea\u4f1a\u7528\u52a8\u4f5c\u8868\u8fbe\u5de5\u4f5c\u72b6\u6001\u7684\u84dd\u773c\u7070\u767d\u957f\u6bdb\u684c\u9762\u732b\u3002.",
+  "created_at": "2026-07-20T14:33:26.347650+00:00",
+  "sprite_version_number": 2,
+  "atlas": {
+    "columns": 8,
+    "rows": 11,
+    "cell_width": 192,
+    "cell_height": 208,
+    "width": 1536,
+    "height": 2288
+  },
+  "rows": [
+    {
+      "state": "idle",
+      "row": 0,
+      "frames": 6,
+      "purpose": "calm resting, breathing, and blinking loop"
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "frames": 8,
+      "purpose": "rightward drag movement loop"
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "frames": 8,
+      "purpose": "leftward drag movement loop"
+    },
+    {
+      "state": "waving",
+      "row": 3,
+      "frames": 4,
+      "purpose": "greeting or attention gesture"
+    },
+    {
+      "state": "jumping",
+      "row": 4,
+      "frames": 5,
+      "purpose": "hover or playful jump"
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "frames": 8,
+      "purpose": "blocked, failed, or cancelled reaction"
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "frames": 6,
+      "purpose": "waiting for approval, help, or user input"
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "frames": 6,
+      "purpose": "active task work or processing"
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "frames": 6,
+      "purpose": "ready or completed output review"
+    },
+    {
+      "state": "look-row-9",
+      "row": 9,
+      "frames": 8,
+      "directions": [
+        "000",
+        "022.5",
+        "045",
+        "067.5",
+        "090",
+        "112.5",
+        "135",
+        "157.5"
+      ],
+      "purpose": "clockwise look directions from up through down-right"
+    },
+    {
+      "state": "look-row-10",
+      "row": 10,
+      "frames": 8,
+      "directions": [
+        "180",
+        "202.5",
+        "225",
+        "247.5",
+        "270",
+        "292.5",
+        "315",
+        "337.5"
+      ],
+      "purpose": "clockwise look directions from down through up-left"
+    }
+  ],
+  "layout_guides": [
+    {
+      "state": "idle",
+      "path": "references/layout-guides/idle.png",
+      "width": 1152,
+      "height": 208,
+      "frames": 6,
+      "cell_width": 192,
+      "cell_height": 208,
+      "safe_margin_x": 18,
+      "safe_margin_y": 16,
+      "usage": "layout guide input only; do not copy visible guide lines into generated sprite strips"
+    },
+    {
+      "state": "running-right",
+      "path": "references/layout-guides/running-right.png",
+      "width": 1536,
+      "height": 208,
+      "frames": 8,
+      "cell_width": 192,
+      "cell_height": 208,
+      "safe_margin_x": 18,
+      "safe_margin_y": 16,
+      "usage": "layout guide input only; do not copy visible guide lines into generated sprite strips"
+    },
+    {
+      "state": "running-left",
+      "path": "references/layout-guides/running-left.png",
+      "width": 1536,
+      "height": 208,
+      "frames": 8,
+      "cell_width": 192,
+      "cell_height": 208,
+      "safe_margin_x": 18,
+      "safe_margin_y": 16,
+      "usage": "layout guide input only; do not copy visible guide lines into generated sprite strips"
+    },
+    {
+      "state": "waving",
+      "path": "references/layout-guides/waving.png",
+      "width": 768,
+      "height": 208,
+      "frames": 4,
+      "cell_width": 192,
+      "cell_height": 208,
+      "safe_margin_x": 18,
+      "safe_margin_y": 16,
+      "usage": "layout guide input only; do not copy visible guide lines into generated sprite strips"
+    },
+    {
+      "state": "jumping",
+      "path": "references/layout-guides/jumping.png",
+      "width": 960,
+      "height": 208,
+      "frames": 5,
+      "cell_width": 192,
+      "cell_height": 208,
+      "safe_margin_x": 18,
+      "safe_margin_y": 16,
+      "usage": "layout guide input only; do not copy visible guide lines into generated sprite strips"
+    },
+    {
+      "state": "failed",
+      "path": "references/layout-guides/failed.png",
+      "width": 1536,
+      "height": 208,
+      "frames": 8,
+      "cell_width": 192,
+      "cell_height": 208,
+      "safe_margin_x": 18,
+      "safe_margin_y": 16,
+      "usage": "layout guide input only; do not copy visible guide lines into generated sprite strips"
+    },
+    {
+      "state": "waiting",
+      "path": "references/layout-guides/waiting.png",
+      "width": 1152,
+      "height": 208,
+      "frames": 6,
+      "cell_width": 192,
+      "cell_height": 208,
+      "safe_margin_x": 18,
+      "safe_margin_y": 16,
+      "usage": "layout guide input only; do not copy visible guide lines into generated sprite strips"
+    },
+    {
+      "state": "running",
+      "path": "references/layout-guides/running.png",
+      "width": 1152,
+      "height": 208,
+      "frames": 6,
+      "cell_width": 192,
+      "cell_height": 208,
+      "safe_margin_x": 18,
+      "safe_margin_y": 16,
+      "usage": "layout guide input only; do not copy visible guide lines into generated sprite strips"
+    },
+    {
+      "state": "review",
+      "path": "references/layout-guides/review.png",
+      "width": 1152,
+      "height": 208,
+      "frames": 6,
+      "cell_width": 192,
+      "cell_height": 208,
+      "safe_margin_x": 18,
+      "safe_margin_y": 16,
+      "usage": "layout guide input only; do not copy visible guide lines into generated sprite strips"
+    },
+    {
+      "state": "look-row-9",
+      "path": "references/layout-guides/look-row-9.png",
+      "width": 1536,
+      "height": 208,
+      "frames": 8,
+      "cell_width": 192,
+      "cell_height": 208,
+      "safe_margin_x": 18,
+      "safe_margin_y": 16,
+      "usage": "layout guide input only; do not copy visible guide lines into generated sprite strips"
+    },
+    {
+      "state": "look-row-10",
+      "path": "references/layout-guides/look-row-10.png",
+      "width": 1536,
+      "height": 208,
+      "frames": 8,
+      "cell_width": 192,
+      "cell_height": 208,
+      "safe_margin_x": 18,
+      "safe_margin_y": 16,
+      "usage": "layout guide input only; do not copy visible guide lines into generated sprite strips"
+    },
+    {
+      "state": "look-cardinals",
+      "path": "references/layout-guides/look-cardinals.png",
+      "width": 768,
+      "height": 208,
+      "frames": 4,
+      "cell_width": 192,
+      "cell_height": 208,
+      "safe_margin_x": 18,
+      "safe_margin_y": 16,
+      "usage": "layout guide input only; do not copy visible guide lines into generated sprite strips"
+    }
+  ],
+  "references": [
+    {
+      "path": "/Users/liqinwan/Documents/Codex/pets/xuetuan/references/reference-01.png",
+      "width": 984,
+      "height": 1364,
+      "mode": "RGB",
+      "format": "PNG",
+      "source_path": "/private/var/folders/t3/ldps6wf90qx_q00brzk4sjg40000gn/T/codex-clipboard-eed7423a-f5cc-47a9-a898-441461b0df9b.png",
+      "copied_path": "/Users/liqinwan/Documents/Codex/pets/xuetuan/references/reference-01.png"
+    }
+  ],
+  "chroma_key": {
+    "hex": "#0000FF",
+    "rgb": [
+      0,
+      0,
+      255
+    ],
+    "name": "blue",
+    "selection": "auto",
+    "score": 212.15
+  },
+  "pet_notes": "\u7070\u767d\u53cc\u8272\u957f\u6bdb\u732b\uff0c\u84dd\u8272\u773c\u775b\uff0c\u767d\u8272\u9f3b\u6881\u548c\u80f8\u53e3\uff0c\u7070\u8272\u8033\u6735\u4e0e\u84ec\u677e\u5c3e\u5df4\uff1b\u6c14\u8d28\u5b89\u9759\u3001\u806a\u660e\u3001\u9ecf\u4eba\uff0c\u50cf\u4e00\u4e2a\u966a\u4f34\u5199\u4ee3\u7801\u548c\u6574\u7406\u77e5\u8bc6\u7684\u684c\u9762\u4f19\u4f34\u3002\u5199\u4ee3\u7801\u65f6\u524d\u722a\u5feb\u901f\u6572\u51fb\uff0c\u67e5\u7b14\u8bb0\u65f6\u4f4e\u5934\u7ffb\u9605\uff0c\u6d4f\u89c8\u7f51\u9875\u65f6\u4fa7\u8eab\u76ef\u5c4f\uff0c\u6478\u9c7c\u65f6\u8db4\u7740\u6253\u76f9\u3002",
+  "style_preset": "plush",
+  "style_notes": "\u67d4\u8f6f\u6bdb\u7ed2\u73a9\u5076\u611f\uff0c\u4fdd\u6301\u7167\u7247\u4e2d\u7684\u8138\u90e8\u82b1\u8272\u4e0e\u84dd\u773c\u775b\uff0c\u9002\u5408192x208\u5c0f\u5c3a\u5bf8\uff0c\u5168\u8eab\u5c45\u4e2d\uff0c\u5e73\u6d82\u6d0b\u7ea2\u8272\u80cc\u666f\u4f9b\u540e\u5904\u7406\u53bb\u80cc\u3002",
+  "style_contract": "Pet-safe sprite: compact full-body mascot, readable in a 192x208 cell, clear silhouette, simple face, stable palette/materials, and crisp edges for chroma-key extraction. Style `plush`: Soft plush toy mascot with rounded stitched forms, fuzzy fabric feel, simple sewn details, and readable toy-like proportions. User style notes: \u67d4\u8f6f\u6bdb\u7ed2\u73a9\u5076\u611f\uff0c\u4fdd\u6301\u7167\u7247\u4e2d\u7684\u8138\u90e8\u82b1\u8272\u4e0e\u84dd\u773c\u775b\uff0c\u9002\u5408192x208\u5c0f\u5c3a\u5bf8\uff0c\u5168\u8eab\u5c45\u4e2d\uff0c\u5e73\u6d82\u6d0b\u7ea2\u8272\u80cc\u666f\u4f9b\u540e\u5904\u7406\u53bb\u80cc\u3002.",
+  "brand_name": "",
+  "brand_brief": "",
+  "brand_sources": [],
+  "pet_safe_style": "Pet-safe sprite: compact full-body mascot, readable in a 192x208 cell, clear silhouette, simple face, stable palette/materials, and crisp edges for chroma-key extraction.",
+  "primary_generation_skill": "$imagegen"
+}
